@@ -24,9 +24,7 @@ function App() {
       descricao: document.getElementById('descricao').value
     }
 
-    atividades.push(novaAtividade);
-    setAtividades([...atividades]);
-    console.log(atividades);
+    setAtividades([...atividades, { ...novaAtividade}]);
   }
 
   return (
